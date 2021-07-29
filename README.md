@@ -14,3 +14,6 @@ This script is a basis for a new Python user to modify and output other textual 
 
 ### Other Bible Texts
 Any Bible text can be used as long as it is one verse per line with a tab seprarating the verse reference from the text. Texts with added data such as Strong's Numbers can be used if the extract2csv.py code is modified to deal with extra the data.
+
+### Notes
+Hyphenated words are considered one word but the hyphen is not counted as a character.
