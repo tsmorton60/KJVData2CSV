@@ -61,6 +61,12 @@ def generate():
             
             # Counts characters in word
             char = len(wd)
+            
+            # Subtract 1 for hyphen in hyphenated word
+            if '-' in wd:
+                #print(wd)
+                char -=1
+            
             # Add to running character count
             totalCharCnt += char
             charsNvs += char
@@ -83,7 +89,7 @@ def generate():
             # Subtract if word starts with 'y' since it is not a vowel 
             if wd.lower().startswith('y'):
                 wdVowels -=1
-
+                        
             gemVs += gem
             totalVowels += wdVowels
             
